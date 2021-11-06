@@ -1,0 +1,64 @@
+@import 'variables';
+
+.toolbar {
+  align-items: center;
+  display: flex;
+
+  &__button {
+    margin-right: 1rem;
+  }
+  &__logo {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+  }
+}
+
+.sidenav {
+  height: calc(100vh - 65px);
+
+  &__tank {
+    background: $primary;
+    border-radius: 5px;
+    border-right: none;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 15rem;
+    color: $body;
+  }
+
+  &__icon {
+    user-select: none;
+    font-size: 4rem;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  &__content {
+    &--breadcrumbs {
+      margin: 1rem 1rem 0 1rem;
+      align-items: center;
+      border-radius: 5px;
+      background: $body;
+      padding: 0 1rem;
+      display: flex;
+      height: 3rem;
+    }
+
+    &--tank {
+      // 98px of toolbar, 8px of padding and 4rem of breadcrumbs
+      height: calc(100vh - 108px - 4rem);
+      border-radius: 5px;
+      background: $body;
+      margin: 1rem;
+      padding: 4px;
+    }
+
+    &__router {
+      border-radius: 5px;
+      overflow-y: auto;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

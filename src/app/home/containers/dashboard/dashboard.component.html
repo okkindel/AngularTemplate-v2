@@ -1,0 +1,35 @@
+<mat-toolbar class="toolbar" color="primary">
+  <button class="toolbar__button" mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon> menu </mat-icon>
+  </button>
+  <img src="/assets/img/logo-white.png" class="toolbar__logo" />
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav">
+  <mat-sidenav
+    #sidenav
+    class="sidenav__tank mat-elevation-z8"
+    mode="side"
+    opened
+  >
+    <mat-icon class="sidenav__icon">account_circle</mat-icon>
+    <h3>{{ username }}</h3>
+    <tmp-menu></tmp-menu>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div
+      [ngStyle]="{ 'margin-left': sidenav.opened ? '2rem' : '1rem' }"
+      class="sidenav__content--breadcrumbs mat-elevation-z1"
+    >
+      <tmp-breadcrumbs></tmp-breadcrumbs>
+    </div>
+    <div
+      [ngStyle]="{ 'margin-left': sidenav.opened ? '2rem' : '1rem' }"
+      class="sidenav__content--tank mat-elevation-z8"
+    >
+      <div class="sidenav__content__router">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

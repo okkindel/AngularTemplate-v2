@@ -1,0 +1,17 @@
+@import 'palette.scss';
+
+$primary-white: map-get($md-palette, 50);
+$primary-light: map-get($md-palette, 200);
+$primary-dark: map-get($md-palette, 800);
+$primary: map-get($md-palette, 500);
+
+$accent-white: map-get($md-palette, A100);
+$accent-light: map-get($md-palette, A200);
+$accent-dark: map-get($md-palette, A700);
+$accent: map-get($md-palette, A400);
+
+$error: map-get($md-errror, 500);
+
+$disabled: #ddd;
+$text: #000;
+$body: #fff;

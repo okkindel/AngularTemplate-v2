@@ -1,0 +1,36 @@
+@use '~@angular/material' as mat;
+
+$md-palette: (
+  50: #e2e7e8,
+  100: #b6c2c5,
+  200: #869a9e,
+  300: #557177,
+  400: #30525a,
+  500: #0c343d,
+  600: #0a2f37,
+  700: #08272f,
+  800: #062127,
+  900: #03151a,
+  A100: #58cfff,
+  A200: #25c1ff,
+  A400: #00acf1,
+  A700: #009ad8,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+  ),
+);
+
+$md-errror: mat.$red-palette;

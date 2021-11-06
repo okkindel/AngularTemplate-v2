@@ -1,0 +1,10 @@
+@import './app/styles/theme.scss';
+@import './app/styles/utils.scss';
+@import '~ngx-toastr/toastr';
+
+html,
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}

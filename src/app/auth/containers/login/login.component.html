@@ -1,0 +1,24 @@
+<tmp-auth-card>
+  <mat-card class="card">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <img src="/assets/img/logo.png" class="logo" />
+      <mat-card-content class="card__content">
+        <mat-form-field>
+          <mat-label>{{ 'EMAIL' | translate }}</mat-label>
+          <input formControlName="email" matInput required />
+          <mat-error>{{ 'PROVIDE_VALID_EMAIL' | translate }}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>{{ 'PASSWORD' | translate }}</mat-label>
+          <input formControlName="password" type="password" matInput required />
+          <mat-error>{{ 'PROVIDE_VALID_PASSWORD' | translate }}</mat-error>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions align="end" class="card__buttons">
+        <button mat-flat-button color="primary">
+          {{ 'LOG_IN' | translate }}
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</tmp-auth-card>

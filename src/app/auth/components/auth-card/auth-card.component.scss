@@ -1,0 +1,10 @@
+@import 'variables';
+
+.auth-card-tank {
+  background-image: linear-gradient(to right top, $primary, $accent-dark);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}

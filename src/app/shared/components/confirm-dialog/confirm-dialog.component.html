@@ -1,0 +1,13 @@
+<p mat-dialog-title *ngIf="data.title">{{ data.title | translate }}</p>
+<p display-2 *ngIf="data.message">{{ data.message | translate }}</p>
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="onDismiss()">{{ 'NO' | translate }}</button>
+  <button
+    (click)="onConfirm()"
+    mat-stroked-button
+    cdkFocusInitial
+    color="primary"
+  >
+    {{ 'YES' | translate }}
+  </button>
+</div>
